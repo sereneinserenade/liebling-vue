@@ -1,0 +1,35 @@
+<template>
+  <!-- {{!--
+This subscribe template is used to display the form where users can subscribe.
+You need to enable the subscription feature first.
+--}} -->
+  <!-- TODO: change this component thoroughly -->
+
+  <form method="post">
+    <!-- action="{{action}}"
+    id="{{form_id}}"
+    class="{{form_class}}" -->
+    {{ hidden }}
+
+    <!-- <div class="pos-relative">
+      <label for="{{input_id}}" class="sr-only">{{ placeholder }}</label>
+      {{input_email id=input_id class=input_class placeholder=placeholder value=email autofocus=autofocus}}
+    </div>
+    <button id="{{button_id}}" class="{{button_class}}" type="submit">
+      {{t "Subscribe"}}
+    </button>
+
+    {{ script }}
+
+    {{#if error}}
+    <p class="m-small-text in-subscribe-page">{{t "Email cannot be blank."}}</p>
+    {{/if}} -->
+  </form>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+
+@Component
+export default class SubscribeForm extends Vue {}
+</script>

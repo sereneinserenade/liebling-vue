@@ -1,0 +1,11 @@
+export { default as Footer } from "./Footer.vue";
+export { default as Header } from "./Header.vue";
+export { default as Hero } from "./Hero.vue";
+export { default as Loop } from "./Loop.vue";
+export { default as ComponentNavigation } from "./ComponentNavigation.vue";
+export { default as NewsletterForm } from "./NewsletterForm.vue";
+export { default as Notifications } from "./Notifications.vue";
+export { default as Pagination } from "./Pagination.vue";
+export { default as Search } from "./Search.vue";
+export { default as SubscribeForm } from "./SubscribeForm.vue";
+export { default as FeaturedPosts } from "./FeaturedPosts.vue";
