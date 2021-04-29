@@ -1,5 +1,8 @@
 # liebling-vue
 
+This is a VueJS translation of [ghost theme Liebling](https://github.com/eddiesigner/liebling) by [Eduardo Gómez](https://github.com/eddiesigner).
+For now it only supports english and the 'subscribe' function is not ready yet. Use in production at your own risk.
+
 ## Project setup
 ```
 npm install
