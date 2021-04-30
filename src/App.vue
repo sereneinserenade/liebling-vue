@@ -17,8 +17,8 @@ export default class App extends Vue {
 
   async mounted(): Promise<void> {
     const siteConfig: SiteConfig = {
-      API_URL: process.env.VUE_APP_GHOST_API_URL, // https://example.com (without trailing forward slash)
-      CONTENT_API_KEY: process.env.VUE_APP_GHOST_CONTENT_API_KEY, // content api key
+      API_URL: "YOUR_SITE_URL_HERE", // https://example.com (without trailing forward slash)
+      CONTENT_API_KEY: "YOUR_CONTENT_API_KEY_HERE", // content api key
     };
 
     this.$store.commit("SET_SITE_CONFIG", siteConfig);

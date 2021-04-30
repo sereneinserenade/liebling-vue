@@ -3,15 +3,11 @@
     <!-- {{!-- Inject styles of the hero image to make it responsive --}} -->
     <Hero :bgUrl="settings.cover_image">
       <template #heroContent>
-        <div
-          class="m-hero__content top-gainers-losers"
-          data-aos-not-now="fade-down"
-        >
-          <TopGainersLosers />
-          <!-- <h1 class="m-hero-title bigger">{{ settings.title }}</h1>
+        <div class="m-hero__content" data-aos-not-now="fade-down">
+          <h1 class="m-hero-title bigger">{{ settings.title }}</h1>
           <p v-if="settings.description" class="m-hero-description bigger">
             {{ settings.description }}
-          </p> -->
+          </p>
         </div>
       </template>
     </Hero>
@@ -142,13 +138,7 @@
 
 <script lang="ts">
 import { PostOrPage, State } from "@/types";
-import {
-  Pagination,
-  Loop,
-  Hero,
-  FeaturedPosts,
-  TopGainersLosers,
-} from "@/components";
+import { Pagination, Loop, Hero, FeaturedPosts } from "@/components";
 import {
   getImageUrlForSize,
   getAssetUrl,
@@ -162,7 +152,6 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component({
   components: {
-    TopGainersLosers,
     FeaturedPosts,
     Pagination,
     Loop,
@@ -221,10 +210,6 @@ export default class Page extends Vue {
 </script>
 
 <style lang="scss">
-.m-hero__content.top-gainers-losers {
-  text-align: start;
-}
-
 .m-article-card__featured {
   svg {
     transform: scale(0.7);
